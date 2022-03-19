@@ -1,0 +1,21 @@
+@import "fonts.css";
+@import "body.css";
+
+.pick-view {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.pick-view-item-wrapper {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+.pick-view-info {
+    display: block;
+    font-family: "ITC-Elan", sans-serif;
+}

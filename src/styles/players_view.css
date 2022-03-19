@@ -1,0 +1,21 @@
+@import "fonts.css";
+@import "body.css";
+
+.players-view {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0) 75%, rgba(255,255,255,1));
+}
+.players-view-item-wrapper {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+.players-view-info {
+    display: block;
+    font-family: "ITC-Elan", sans-serif;
+}

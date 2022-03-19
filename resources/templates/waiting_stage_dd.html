@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: "ITC-Elan";
+            src: url("../../src/assets/fonts/elanitcstd_book.otf") format("opentype");
+        }
+        :root {
+            font-family: "Arial", sans-serif;
+            background: url("../../src/assets/img/bg_0.jpg") no-repeat black;
+            background-size: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .waiting-view {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0) 75%, rgba(255,255,255,1));
+        }
+        .item-wrapper {
+            margin-left: 6.5%;
+            margin-right: 6.5%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            background-color: transparent;
+        }
+        .item {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 0 2vw red;
+            border: 0.4vw solid red;
+            transform: skew(-30deg);
+            flex-basis: 23.6%;
+            margin: 0.7%;
+            text-align: center;
+            font-family: "ITC-Elan", sans-serif;
+            font-size: 3vw;
+            font-weight: bold;
+        }
+        .avatar {
+            height: 100%;
+            width: 100%;
+            transform: skew(30deg) translate(10%, 5%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .avatar>div {
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            border: 0.2vw solid red;
+            border-radius: 50%;
+            flex-basis: 90%;
+            box-shadow: 0 0 10vw red;
+            font-size: 14vw;
+            color: red;
+            background: rgba(255,0,0,0.3);
+        }
+        .nickname-wrapper {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            height: 23%;
+            width: 145%;
+            transform: skew(30deg) rotate(-60deg) translate(10%, -225%);
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(rgba(255,0,0,1) 50%, rgba(0,0,0,0));
+        }
+        .nickname {
+            flex-basis: 76%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 0.8vw white;
+        }
+        .stub {
+            flex-basis: 12%;
+        }
+        .info {
+            display: block;
+            font-family: "ITC-Elan", sans-serif;
+            text-shadow: 0 0 2vw red;
+            font-size: 10.6vw;
+            text-align: center;
+        }
+        .rating {
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            position: absolute;
+            box-sizing: border-box;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            transform: skew(30deg) translate(5%, -10%);
+            border: 1vw solid rgb(65,105,225);
+            background: rgba(65,105,225,0.5);
+            border-radius: 50%;
+            height: 40%;
+            text-align: center;
+            font-size: 5vw;
+            color: silver;
+        }
+    </style>
+</head>
+<body>
+<div class="waiting-view">
+    <div class="item-wrapper">
+        <div class="item" style="box-shadow: 0 0 2vw green; border: 0.4vw solid green">
+            <div class="rating">?</div>
+            <div class="avatar">
+                <div style="background: url(../img/test_1.webp) no-repeat transparent; background-size: 100%; box-shadow: 0 0 10vw green; border: 0.2vw solid green"></div>
+            </div>
+            <div class="nickname-wrapper" style="background: linear-gradient(rgba(0,128,0,1) 50%, rgba(0,0,0,0))">
+                <div class="stub"></div>
+                <div class="nickname">
+                    _vadya_queen
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item" style="box-shadow: 0 0 2vw green; border: 0.4vw solid green">
+            <div class="rating">?</div>
+            <div class="avatar">
+                <div style="background: url(../img/test_1.webp) no-repeat transparent; background-size: 100%; box-shadow: 0 0 10vw green; border: 0.2vw solid green"></div>
+            </div>
+            <div class="nickname-wrapper" style="background: linear-gradient(rgba(0,128,0,1) 50%, rgba(0,0,0,0))">
+                <div class="stub"></div>
+                <div class="nickname">
+                    long_nickname_long_nickname
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="avatar">
+                <div>?</div>
+            </div>
+            <div class="nickname-wrapper">
+                <div class="stub"></div>
+                <div class="nickname">
+                    FREE&nbspSLOT
+                </div>
+                <div class="stub"></div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        Waiting for Players
+    </div>
+</div>
+</body>
+</html>

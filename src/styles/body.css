@@ -1,0 +1,9 @@
+:root {
+    font-family: "Arial", sans-serif;
+    background: url("@/assets/img/bg_0.jpg") no-repeat black;
+    background-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
