@@ -3,13 +3,13 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    context: path.resolve(__dirname, "src"),
+    context: path.resolve(__dirname, "view_src"),
     entry: {
         "main": "./js/index.js"
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "view_build")
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -44,7 +44,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "src")
+            "@": path.resolve(__dirname, "view_src")
         }
     },
     devServer: {
