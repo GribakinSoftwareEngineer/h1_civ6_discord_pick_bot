@@ -1,5 +1,7 @@
 const { client, eventFiles } = require("./loader");
 
+require("./utils/view.js");
+
 (async () => {
     for(const file of eventFiles){
         const event = require(`./events/${file}`);
